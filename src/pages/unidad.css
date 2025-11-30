@@ -1,0 +1,58 @@
+.unidad-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Logos en esquinas */
+.logo-udg {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 120px;
+}
+
+.logo-cucei {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 120px;
+}
+
+.unidad-content {
+  text-align: center;
+}
+
+.unidad-content h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.pdf-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pdf-item {
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: 2px solid black;
+  padding: 12px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.pdf-item:hover {
+  background: black;
+  color: white;
+}

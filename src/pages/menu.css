@@ -1,0 +1,85 @@
+/* Estilos generales para el body y html */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal que ocupa toda la pantalla y usa flex */
+.menu-wrapper {
+  display: flex;
+  height: 100vh; /* Altura total de la ventana */
+  width: 100vw;  /* Ancho total de la ventana */
+}
+
+/* Parte izquierda: logos centrados vertical y horizontalmente */
+.left-side {
+  flex: 1; /* Ocupa la mitad del ancho */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra vertical */
+  align-items: center;     /* Centra horizontal */
+  gap: 20px;
+  border-right: 3px solid #7c52ff; /* Línea morada */
+  padding: 20px;
+}
+
+.logo-container img {
+  max-width: 250px;
+  height: auto;
+}
+
+/* Parte derecha: menú */
+.right-side {
+  flex: 1; /* Ocupa la otra mitad del ancho */
+  background-color: #435776; /* Azul oscuro */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra vertical */
+  padding-left: 40px;
+}
+
+.right-side ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.right-side ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.right-side ul li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.right-side ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;  /* Texto centrado */
+}
+
+.right-side ul li a:hover {
+  color: #7c52ff;
+}
+
+.menu-title {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
